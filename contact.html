@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak | Mohammad Imtiyazian Nu'man</title>
+  <meta name="description" content="Hubungi Mohammad Imtiyazian Nu'man - Email, WhatsApp, LinkedIn, dan formulir pesan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-bracket">&lt;</span>
+        <span class="loader-name">YN</span>
+        <span class="loader-bracket">/&gt;</span>
+      </div>
+      <div class="loader-bar-wrapper">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-text" data-i18n="loading">Memuat portofolio...</p>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">Tentang</a></li>
+        <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="experience.html" class="nav-link" data-i18n="nav.experience">Pengalaman</a></li>
+        <li><a href="education.html" class="nav-link" data-i18n="nav.education">Pendidikan</a></li>
+        <li><a href="organization.html" class="nav-link" data-i18n="nav.organization">Organisasi</a></li>
+        <li><a href="certifications.html" class="nav-link" data-i18n="nav.certifications">Sertifikasi</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta active-nav" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- Language Toggle (one-click) -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+          <span class="lang-label" id="langLabel">ID</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-other" id="langOther">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="page-main">
+    <div class="container">
+
+      <!-- Breadcrumb / Back -->
+      <a href="index.html" class="page-nav-back" data-i18n="back.home">← Kembali ke Beranda</a>
+
+      <!-- Page Hero Header -->
+      <header class="page-hero" data-aos="fade-up">
+        <div class="page-hero-badge">
+          <span class="badge-dot"></span>
+          <span>// 07. contact_me</span>
+        </div>
+        <h1 class="page-hero-title">
+          <span data-i18n="contact.title">Hubungi</span> <span class="gradient-text" data-i18n="contact.title2">Saya</span>
+        </h1>
+        <p class="page-hero-sub" data-i18n="contact.sub">
+          Terbuka untuk peluang kerja, kolaborasi, atau sekadar ngobrol!
+        </p>
+      </header>
+
+      <!-- Contact Grid -->
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <!-- Gmail -->
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammadzyan30@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-email">
+            <div class="contact-icon" style="--c-color:#ea4335">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Email / Gmail</div>
+              <div class="contact-value">mohammadzyan30@gmail.com</div>
+            </div>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/6281382473906" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-phone">
+            <div class="contact-icon" style="--c-color:#10b981">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">WhatsApp / Phone</div>
+              <div class="contact-value">+62 813-8247-3906</div>
+            </div>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/imtiyazian" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-linkedin">
+            <div class="contact-icon" style="--c-color:#0a66c2">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/imtiyazian</div>
+            </div>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- Location -->
+          <div class="contact-card glass-card" id="contact-location">
+            <div class="contact-icon" style="--c-color:#8b5cf6">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-label" data-i18n="contact.loc">Lokasi</div>
+              <div class="contact-value">Jakarta Barat, Indonesia</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap glass-card" data-aos="fade-left">
+          <h3 class="form-title" data-i18n="contact.form.title">Kirim Pesan</h3>
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name" data-i18n="contact.form.name">Nama</label>
+              <input type="text" id="name" data-i18n-placeholder="contact.form.name.ph" placeholder="Nama Anda" required autocomplete="name"/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="email@contoh.com" required autocomplete="email"/>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="contact.form.msg">Pesan</label>
+              <textarea id="message" rows="4" data-i18n-placeholder="contact.form.msg.ph" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span id="submitText" data-i18n="contact.form.send">Kirim Pesan</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <div class="success-icon">✅</div>
+            <h4 data-i18n="contact.success.title">WhatsApp Terbuka!</h4>
+            <p data-i18n="contact.success.desc">WhatsApp lo terbuka dengan pesan yang sudah terisi. Tinggal tekan Kirim! ✅</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Nav Links -->
+      <div style="margin-top: 4rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+        <a href="certifications.html" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span data-i18n="nav.certifications">Sertifikasi</span>
+        </a>
+        <a href="index.html" class="btn btn-ghost">
+          <span data-i18n="back.home">← Kembali ke Beranda</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Made with ❤️ by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
+        </p>
+        <p class="footer-copy">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

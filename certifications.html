@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sertifikasi & Pencapaian | Mohammad Imtiyazian Nu'man</title>
+  <meta name="description" content="Sertifikasi & Pencapaian Mohammad Imtiyazian Nu'man - Business Plan Competition, BNSP, Algorithm Certification." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-bracket">&lt;</span>
+        <span class="loader-name">YN</span>
+        <span class="loader-bracket">/&gt;</span>
+      </div>
+      <div class="loader-bar-wrapper">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-text" data-i18n="loading">Memuat portofolio...</p>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">Tentang</a></li>
+        <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="experience.html" class="nav-link" data-i18n="nav.experience">Pengalaman</a></li>
+        <li><a href="education.html" class="nav-link" data-i18n="nav.education">Pendidikan</a></li>
+        <li><a href="organization.html" class="nav-link" data-i18n="nav.organization">Organisasi</a></li>
+        <li><a href="certifications.html" class="nav-link active-nav" data-i18n="nav.certifications">Sertifikasi</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- Language Toggle (one-click) -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+          <span class="lang-label" id="langLabel">ID</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-other" id="langOther">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="page-main">
+    <div class="container">
+
+      <!-- Breadcrumb / Back -->
+      <a href="index.html" class="page-nav-back" data-i18n="back.home">← Kembali ke Beranda</a>
+
+      <!-- Page Hero Header -->
+      <header class="page-hero" data-aos="fade-up">
+        <div class="page-hero-badge">
+          <span class="badge-dot"></span>
+          <span>// 06. certifications</span>
+        </div>
+        <h1 class="page-hero-title">
+          <span data-i18n="cert.title">Sertifikasi &</span> <span class="gradient-text" data-i18n="cert.title2">Pencapaian</span>
+        </h1>
+        <p class="page-hero-sub" data-i18n="cert.sub">
+          Sertifikasi keahlian, kompetisi, dan pengakuan profesional
+        </p>
+      </header>
+
+      <!-- Certifications Grid -->
+      <div class="cert-grid">
+        <div class="cert-card glass-card" data-aos="zoom-in" id="cert-bpc">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">🏆</div>
+          <h3 class="cert-name">Business Plan Competition</h3>
+          <div class="cert-issuer">Virtual Company Indonesia</div>
+          <div class="cert-badge-label" data-i18n="cert.competition">Competition</div>
+        </div>
+
+        <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="100" id="cert-bnsp">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">📜</div>
+          <h3 class="cert-name">Lembaga Sertifikasi Profesi</h3>
+          <div class="cert-issuer">BNSP · P2PTK2</div>
+          <div class="cert-badge-label" data-i18n="cert.professional">Professional</div>
+        </div>
+
+        <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="200" id="cert-algo">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">💡</div>
+          <h3 class="cert-name">Algorithm Certification</h3>
+          <div class="cert-issuer" data-i18n="cert.algo.issuer">Teknologi & Komputer</div>
+          <div class="cert-badge-label" data-i18n="cert.technical">Technical</div>
+        </div>
+      </div>
+
+      <!-- Bottom Nav Links -->
+      <div style="margin-top: 4rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+        <a href="organization.html" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span data-i18n="nav.organization">Organisasi</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary">
+          <span data-i18n="nav.contact">Kontak Saya</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Made with ❤️ by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
+        </p>
+        <p class="footer-copy">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keahlian (Skills) | Mohammad Imtiyazian Nu'man</title>
+  <meta name="description" content="Keahlian Mohammad Imtiyazian Nu'man - Web Development, Network Administration, Microsoft Office, Design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-bracket">&lt;</span>
+        <span class="loader-name">YN</span>
+        <span class="loader-bracket">/&gt;</span>
+      </div>
+      <div class="loader-bar-wrapper">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-text" data-i18n="loading">Memuat portofolio...</p>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">Tentang</a></li>
+        <li><a href="skills.html" class="nav-link active-nav" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="experience.html" class="nav-link" data-i18n="nav.experience">Pengalaman</a></li>
+        <li><a href="education.html" class="nav-link" data-i18n="nav.education">Pendidikan</a></li>
+        <li><a href="organization.html" class="nav-link" data-i18n="nav.organization">Organisasi</a></li>
+        <li><a href="certifications.html" class="nav-link" data-i18n="nav.certifications">Sertifikasi</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- Language Toggle (one-click) -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+          <span class="lang-label" id="langLabel">ID</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-other" id="langOther">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="page-main">
+    <div class="container">
+
+      <!-- Breadcrumb / Back -->
+      <a href="index.html" class="page-nav-back" data-i18n="back.home">← Kembali ke Beranda</a>
+
+      <!-- Page Hero Header -->
+      <header class="page-hero" data-aos="fade-up">
+        <div class="page-hero-badge">
+          <span class="badge-dot"></span>
+          <span>// 02. my_skills</span>
+        </div>
+        <h1 class="page-hero-title">
+          <span data-i18n="skills.title">Keahlian</span> <span class="gradient-text" data-i18n="skills.title2">Saya</span>
+        </h1>
+        <p class="page-hero-sub" data-i18n="skills.sub">
+          Keahlian teknis, soft skills, dan alat pendukung yang saya kuasai
+        </p>
+      </header>
+
+      <!-- Skills Grid Content -->
+      <div class="skills-grid" data-aos="fade-up">
+        <div class="skill-card glass-card" id="skill-webdev">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap" style="--icon-color:#06b6d4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-icon"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="skill-category">Web Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" style="--tag-color:#f97316">HTML5</span>
+            <span class="skill-tag" style="--tag-color:#3b82f6">CSS3</span>
+            <span class="skill-tag" style="--tag-color:#eab308">JavaScript</span>
+            <span class="skill-tag" style="--tag-color:#8b5cf6">Web Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-network">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap" style="--icon-color:#8b5cf6">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-icon"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="skill-category">Network Admin</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" style="--tag-color:#10b981">Cisco</span>
+            <span class="skill-tag" style="--tag-color:#3b82f6">MikroTik</span>
+            <span class="skill-tag" style="--tag-color:#f43f5e">Routing</span>
+            <span class="skill-tag" style="--tag-color:#06b6d4">TCP/IP</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-office">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap" style="--icon-color:#10b981">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3 class="skill-category">Microsoft Office</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" style="--tag-color:#2563eb">Word</span>
+            <span class="skill-tag" style="--tag-color:#16a34a">Excel</span>
+            <span class="skill-tag" style="--tag-color:#ea580c">PowerPoint</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-design">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap" style="--icon-color:#f43f5e">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-icon"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+            </div>
+            <h3 class="skill-category">Design</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" style="--tag-color:#3b82f6">Adobe Photoshop</span>
+            <span class="skill-tag" style="--tag-color:#06b6d4">Canva</span>
+            <span class="skill-tag" style="--tag-color:#a855f7">Grafis</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card skill-card-wide" id="skill-soft">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap" style="--icon-color:#f97316">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="skill-category" data-i18n="skills.soft">Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" style="--tag-color:#06b6d4" data-i18n="soft.comm">Komunikasi</span>
+            <span class="skill-tag" style="--tag-color:#8b5cf6">Teamwork</span>
+            <span class="skill-tag" style="--tag-color:#10b981" data-i18n="soft.ps">Problem Solving</span>
+            <span class="skill-tag" style="--tag-color:#f43f5e" data-i18n="soft.adapt">Adaptif</span>
+            <span class="skill-tag" style="--tag-color:#f97316" data-i18n="soft.time">Manajemen Waktu</span>
+            <span class="skill-tag" style="--tag-color:#eab308">Leadership</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Bars -->
+      <div class="skill-bars" data-aos="fade-up" style="margin-top: 4rem;">
+        <h3 class="skill-bars-title" data-i18n="skills.level">Tingkat Keahlian</h3>
+        <div class="bar-list">
+          <div class="bar-item">
+            <div class="bar-label"><span>Web Development</span><span class="bar-pct">80%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="80" style="--bar-color:#06b6d4"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label"><span>Network (Cisco/MikroTik)</span><span class="bar-pct">85%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="85" style="--bar-color:#8b5cf6"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label"><span>Microsoft Office</span><span class="bar-pct">90%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="90" style="--bar-color:#10b981"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label"><span>Adobe Photoshop / Canva</span><span class="bar-pct">75%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="75" style="--bar-color:#f43f5e"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label"><span data-i18n="skills.bar.data">Data Entry & Verifikasi</span><span class="bar-pct">95%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="95" style="--bar-color:#f97316"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Nav Links -->
+      <div style="margin-top: 3.5rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+        <a href="about.html" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span data-i18n="nav.about">Tentang</span>
+        </a>
+        <a href="experience.html" class="btn btn-primary">
+          <span data-i18n="nav.experience">Pengalaman Kerja</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Made with ❤️ by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
+        </p>
+        <p class="footer-copy">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

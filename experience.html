@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pengalaman Kerja | Mohammad Imtiyazian Nu'man</title>
+  <meta name="description" content="Pengalaman Kerja Mohammad Imtiyazian Nu'man - GoTo Gojek Tokopedia, PT. Tijari Teknologi Automasi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-bracket">&lt;</span>
+        <span class="loader-name">YN</span>
+        <span class="loader-bracket">/&gt;</span>
+      </div>
+      <div class="loader-bar-wrapper">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-text" data-i18n="loading">Memuat portofolio...</p>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">Tentang</a></li>
+        <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="experience.html" class="nav-link active-nav" data-i18n="nav.experience">Pengalaman</a></li>
+        <li><a href="education.html" class="nav-link" data-i18n="nav.education">Pendidikan</a></li>
+        <li><a href="organization.html" class="nav-link" data-i18n="nav.organization">Organisasi</a></li>
+        <li><a href="certifications.html" class="nav-link" data-i18n="nav.certifications">Sertifikasi</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- Language Toggle (one-click) -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+          <span class="lang-label" id="langLabel">ID</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-other" id="langOther">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="page-main">
+    <div class="container">
+
+      <!-- Breadcrumb / Back -->
+      <a href="index.html" class="page-nav-back" data-i18n="back.home">← Kembali ke Beranda</a>
+
+      <!-- Page Hero Header -->
+      <header class="page-hero" data-aos="fade-up">
+        <div class="page-hero-badge">
+          <span class="badge-dot"></span>
+          <span>// 03. work_experience</span>
+        </div>
+        <h1 class="page-hero-title">
+          <span data-i18n="exp.title">Pengalaman</span> <span class="gradient-text" data-i18n="exp.title2">Kerja</span>
+        </h1>
+        <p class="page-hero-sub" data-i18n="exp.sub">
+          Riwayat pekerjaan, peran profesional, dan kontribusi proyek
+        </p>
+      </header>
+
+      <!-- Experience Timeline -->
+      <div class="timeline">
+        <!-- GoTo -->
+        <div class="timeline-item" data-aos="fade-right" id="exp-goto">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">KYC Agent</h3>
+                <div class="timeline-company">
+                  <span class="company-logo logo-goto">
+                    <img src="image/goto.png" alt="GoTo Logo" />
+                  </span>
+                  PT. GoTo Gojek Tokopedia
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-type full-time" data-i18n="exp.fulltime">Full Time</span>
+                <span class="timeline-date">Jul 2022 – Agu 2023</span>
+                <span class="timeline-loc">📍 Jakarta Pusat</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li data-i18n="goto.1">Memasukkan data klien baru ke dalam Portal GoPay secara akurat dan efisien</li>
+              <li data-i18n="goto.2">Memverifikasi data klien sesuai dengan SOP perusahaan untuk keamanan transaksi</li>
+              <li data-i18n="goto.3">Mempertahankan target <strong>Service Level Agreement (SLA)</strong> secara konsisten</li>
+              <li data-i18n="goto.4">Menyetujui atau menolak data klien yang tidak memenuhi persyaratan KYC</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tl-tag">Data Entry</span>
+              <span class="tl-tag">KYC</span>
+              <span class="tl-tag">GoPay Portal</span>
+              <span class="tl-tag">SLA Management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tijari -->
+        <div class="timeline-item timeline-right" data-aos="fade-left" id="exp-tijari">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">IT Consultant Intern</h3>
+                <div class="timeline-company">
+                  <span class="company-logo logo-tijari">
+                    <img src="image/tijari.png" alt="Tijari Logo" />
+                  </span>
+                  PT. Tijari Teknologi Automasi
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-type internship" data-i18n="exp.intern">Internship</span>
+                <span class="timeline-date">Mar 2026 – Mei 2026</span>
+                <span class="timeline-loc">📍 Jakarta Selatan</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li data-i18n="tijari.1">Mengembangkan sistem berbasis digital, termasuk desain konsep dan pengembangan fitur</li>
+              <li data-i18n="tijari.2">Mengimplementasikan solusi IT untuk mendukung kebutuhan bisnis dan operasional perusahaan</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tl-tag">IT Consulting</span>
+              <span class="tl-tag">Digital Systems</span>
+              <span class="tl-tag">Feature Dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Nav Links -->
+      <div style="margin-top: 4rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+        <a href="skills.html" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span data-i18n="nav.skills">Skills</span>
+        </a>
+        <a href="education.html" class="btn btn-primary">
+          <span data-i18n="nav.education">Pendidikan</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Made with ❤️ by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
+        </p>
+        <p class="footer-copy">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
