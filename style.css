@@ -212,6 +212,12 @@ a {
   padding: 0.75rem 0;
 }
 
+body.nav-open .navbar.scrolled {
+  transition: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -324,6 +330,30 @@ a {
 }
 
 .lang-toggle:active { transform: scale(0.96); }
+
+.nav-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 2.35rem;
+  padding: 0.38rem 0.8rem;
+  color: var(--text-subtle);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.nav-home:hover {
+  color: var(--text);
+  border-color: var(--primary);
+  background: linear-gradient(135deg, rgba(79,70,229,0.15), rgba(6,182,212,0.15));
+  transform: translateY(-1px);
+}
 
 .lang-label {
   color: var(--secondary);
@@ -867,6 +897,19 @@ a {
   border-color: var(--border-hover);
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+@media (hover: none) {
+  .glass-card:hover {
+    background: var(--bg-card);
+    border-color: var(--border);
+    transform: none;
+    box-shadow: none;
+  }
+
+  .edu-card:hover .edu-logo {
+    transform: none;
+  }
 }
 
 /* ==========================================
@@ -1895,6 +1938,11 @@ a.info-value:hover {
 }
 
 @media (max-width: 768px) {
+  .glass-card {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   .hero-name-block {
     text-align: center;
   }
@@ -1992,7 +2040,13 @@ a.info-value:hover {
 
   .cursor, .cursor-follower { display: none; }
   body { cursor: auto; }
-  .btn, .nav-link, .hamburger, .contact-card, .skill-tag { cursor: pointer; }
+  .btn, .nav-link, .nav-home, .hamburger, .contact-card, .skill-tag { cursor: pointer; }
+  .nav-home {
+    width: 2.35rem;
+    min-height: 2.35rem;
+    padding: 0;
+  }
+  .nav-home span { display: none; }
 }
 
 @media (max-width: 480px) {
@@ -2052,29 +2106,6 @@ a.info-value:hover {
   max-width: 620px;
   margin: 0 auto;
   line-height: 1.6;
-}
-
-.page-nav-back {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  color: var(--text);
-  font-size: 0.95rem;
-  font-weight: 600;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.65rem 1rem;
-  margin-bottom: 1.5rem;
-  transition: color 0.2s ease, transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-  text-decoration: none;
-}
-
-.page-nav-back:hover {
-  color: var(--secondary);
-  background: rgba(6, 182, 212, 0.08);
-  border-color: rgba(6, 182, 212, 0.45);
-  transform: translateY(-2px);
 }
 
 .home-explore-grid {
