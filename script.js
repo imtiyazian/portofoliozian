@@ -20,7 +20,7 @@ const translations = {
     "nav.contact": "Kontak",
     "hero.badge": "Tersedia untuk Peluang Kerja",
     "hero.greeting": "Halo, Saya",
-    "hero.desc": 'Mahasiswa Teknik Informatika tingkat akhir yang passionate di bidang <strong>Web Development</strong>, <strong>Jaringan Komputer</strong>, dan <strong>IT Solutions</strong>. Based di Jakarta Barat 🇮🇩',
+    "hero.desc": 'Mahasiswa Teknik Informatika tingkat akhir yang passionate di bidang <strong>Web Development</strong>, <strong>Jaringan Komputer</strong>, dan <strong>IT Solutions</strong>. Berlokasi di Jakarta Barat 🇮🇩',
     "hero.cta.contact": "Hubungi Saya",
     "hero.cta.cv": "Lihat CV",
     "hero.stat.exp": "Tahun Pengalaman",
@@ -32,6 +32,7 @@ const translations = {
     "about.p2": 'Saya memiliki pengalaman profesional selama <strong>1+ tahun</strong> sebagai KYC Agent di <strong>PT. GoTo Gojek Tokopedia</strong> dan pengalaman sebagai <strong>IT Consultant Intern</strong> di PT. Tijari Teknologi Automasi. Saya sangat passionate dalam Web Development, administrasi jaringan, dan pengembangan solusi IT.',
     "about.p3": 'Sebagai pribadi, saya adalah seorang <strong>pemikir logis</strong>, pekerja tim yang baik, dan mampu bekerja di bawah tekanan. Saya selalu berkomitmen untuk terus belajar dan berkembang secara profesional.',
     "about.loc.label": "Lokasi",
+    "about.loc.value": "Jakarta Barat",
     "about.status.label": "Status",
     "about.status.val": "Mahasiswa Tingkat Akhir",
     "about.traits.title": "Karakter",
@@ -62,17 +63,20 @@ const translations = {
     "goto.2": "Memverifikasi data klien sesuai dengan SOP perusahaan untuk keamanan transaksi",
     "goto.3": "Mempertahankan target <strong>Service Level Agreement (SLA)</strong> secara konsisten",
     "goto.4": "Menyetujui atau menolak data klien yang tidak memenuhi persyaratan KYC",
-    "tijari.1": "Mengembangkan sistem berbasis digital, termasuk desain konsep dan pengembangan fitur",
-    "tijari.2": "Mengimplementasikan solusi IT untuk mendukung kebutuhan bisnis dan operasional perusahaan",
+    "tijari.1": "Berkontribusi dalam pengembangan dan kustomisasi platform ERP menggunakan Odoo 18 dan Python.",
+    "tijari.2": "Membantu mengembangkan sistem e-learning dengan fitur manajemen kursus, ujian, pelacakan progres peserta, dan dasbor pembelajaran.",
+    "tijari.3": "Menggunakan PostgreSQL untuk pengelolaan basis data dan integrasi dengan modul Odoo.",
+    "tijari.4": "Mendukung analisis proses bisnis dan perancangan alur kerja agar fungsi sistem sesuai dengan kebutuhan operasional.",
+    "tijari.5": "Menggunakan Git dan GitHub untuk version control dan kolaborasi proyek.",
     "edu.title": "Riwayat",
     "edu.title2": "Pendidikan",
     "edu.ubl.degree": "S1 Teknik Informatika",
     "edu.active": "🟢 Aktif",
     "edu.now": "Sekarang",
-    "edu.ubl.desc": "Mendalami ilmu komputer, pengembangan perangkat lunak, sistem informasi, dan infrastruktur jaringan.",
+    "edu.ubl.desc": "Mempelajari pengembangan perangkat lunak, pemrograman, basis data, analisis sistem, dan pemecahan masalah berbasis teknologi. Selama perkuliahan, saya terus mengembangkan kemampuan berpikir logis, menganalisis kebutuhan sistem, serta menerapkan pengetahuan teknis melalui proyek akademik dan pengembangan aplikasi.",
     "edu.smk.degree": "Teknik Komputer dan Jaringan",
     "edu.grad": "✅ Lulus",
-    "edu.smk.desc": "Fondasi kuat di bidang Teknik Komputer dan Jaringan — konfigurasi hardware, software, dan infrastruktur jaringan.",
+    "edu.smk.desc": "Mempelajari dasar-dasar teknologi komputer dan jaringan, termasuk instalasi dan konfigurasi perangkat jaringan, administrasi sistem, serta troubleshooting perangkat keras dan perangkat lunak. Pendidikan ini menjadi dasar dalam memahami infrastruktur teknologi informasi dan pengelolaan jaringan komputer.",
     "org.title": "Pengalaman",
     "org.title2": "Organisasi",
     "org.hmti.role": "Staf Pendidikan",
@@ -91,26 +95,36 @@ const translations = {
     "cert.technical": "Teknikal",
     "contact.title": "Hubungi",
     "contact.title2": "Saya",
-    "contact.sub": "Terbuka untuk peluang kerja, kolaborasi, atau sekadar ngobrol!",
+    "contact.sub": "Untuk peluang profesional, kerja sama, atau diskusi seputar teknologi informasi.",
     "contact.loc": "Lokasi",
-    "contact.form.title": "Kirim Pesan",
+    "contact.loc.value": "Jakarta Barat, Indonesia",
+    "edu.location": "Jakarta Selatan",
+    "exp.location": "📍 Jakarta Selatan",
+    "contact.form.title": "Kirim Pesan ke WhatsApp",
     "contact.form.name": "Nama",
-    "contact.form.name.ph": "Nama Anda",
+    "contact.form.name.ph": "Nama Anda / Perusahaan",
     "contact.form.msg": "Pesan",
-    "contact.form.msg.ph": "Tulis pesan Anda di sini...",
-    "contact.form.send": "Kirim Pesan",
+    "contact.form.msg.ph": "Tuliskan pesan atau tujuan Anda menghubungi saya...",
+    "contact.form.send": "Kirim ke WhatsApp",
     "contact.success.title": "WhatsApp Terbuka!",
-    "contact.success.desc": "WhatsApp lo terbuka dengan pesan yang sudah terisi. Tinggal tekan Kirim! ✅",
+    "contact.success.desc": "WhatsApp terbuka dengan pesan yang sudah terisi. Tinggal tekan Kirim! ✅",
+    "contact.back.home": "Kembali ke Beranda",
     "nav.home": "Beranda",
-    "about.sub": "Mengenal lebih dekat latar belakang, karakter, dan minat saya",
+    "about.sub": "Sekilas tentang latar belakang pendidikan, pengalaman, dan kompetensi yang saya kembangkan",
     "skills.sub": "Keahlian teknis, soft skills, dan alat pendukung yang saya kuasai",
     "exp.sub": "Riwayat pekerjaan, peran profesional, dan kontribusi proyek",
-    "edu.sub": "Latar belakang pendidikan formal dari SMK hingga Universitas",
+    "edu.sub": "Latar belakang pendidikan dan kompetensi yang saya kembangkan",
     "org.sub": "Pengalaman kepanitiaan dan organisasi kemahasiswaan",
     "cert.sub": "Sertifikasi keahlian, kompetisi, dan pengakuan profesional",
-    "back.home": "← Kembali ke Beranda",
+    "back.home": "Kembali ke Beranda",
     "explore.title": "Jelajahi Profil",
     "explore.sub": "Pilih menu di bawah untuk melihat informasi lengkap portofolio saya",
+    "explore.about.link": "Buka Profil →",
+    "explore.skills.link": "Lihat Skills →",
+    "explore.experience.link": "Lihat Pengalaman →",
+    "explore.education.link": "Lihat Pendidikan →",
+    "explore.organization.link": "Lihat Organisasi →",
+    "explore.certifications.link": "Lihat Sertifikasi →",
   },
   en: {
     "loading": "Loading portfolio...",
@@ -135,6 +149,7 @@ const translations = {
     "about.p2": 'I have <strong>1+ year</strong> of professional experience as a KYC Agent at <strong>PT. GoTo Gojek Tokopedia</strong> and experience as an <strong>IT Consultant Intern</strong> at PT. Tijari Teknologi Automasi. I am passionate about Web Development, network administration, and IT solution development.',
     "about.p3": 'As an individual, I am a <strong>logical thinker</strong>, a good team player, and able to work under pressure. I am always committed to continuously learning and growing professionally.',
     "about.loc.label": "Location",
+    "about.loc.value": "West Jakarta",
     "about.status.label": "Status",
     "about.status.val": "Final Year Student",
     "about.traits.title": "Character",
@@ -165,17 +180,20 @@ const translations = {
     "goto.2": "Verified client data according to company SOP for transaction security",
     "goto.3": "Consistently maintained <strong>Service Level Agreement (SLA)</strong> targets",
     "goto.4": "Approved or rejected client data that did not meet KYC requirements",
-    "tijari.1": "Developed digital-based systems, including concept design and feature development",
-    "tijari.2": "Implemented IT solutions to support business and operational needs of the company",
+    "tijari.1": "Contributed to the development and customization of an ERP platform using Odoo 18 and Python.",
+    "tijari.2": "Assisted in developing an e-learning system featuring course management, exams, participant progress tracking, and learning dashboards.",
+    "tijari.3": "Worked with PostgreSQL for database management and integration with Odoo modules.",
+    "tijari.4": "Supported business process analysis and workflow design to align system functionality with operational requirements.",
+    "tijari.5": "Utilized Git and GitHub for version control and project collaboration.",
     "edu.title": "Education",
     "edu.title2": "History",
     "edu.ubl.degree": "Bachelor of Informatics Engineering",
     "edu.active": "🟢 Active",
     "edu.now": "Present",
-    "edu.ubl.desc": "Studying computer science, software development, information systems, and network infrastructure.",
+    "edu.ubl.desc": "Studying software development, programming, databases, systems analysis, and technology-based problem solving. Throughout my studies, I have continued to develop logical thinking, analyze system requirements, and apply technical knowledge through academic projects and application development.",
     "edu.smk.degree": "Computer and Network Engineering",
     "edu.grad": "✅ Graduated",
-    "edu.smk.desc": "Strong foundation in Computer and Network Engineering — hardware, software, and network infrastructure configuration.",
+    "edu.smk.desc": "Studied the fundamentals of computer and network technology, including installing and configuring network devices, system administration, and hardware and software troubleshooting. This education provided a foundation for understanding information technology infrastructure and computer network management.",
     "org.title": "Organization",
     "org.title2": "Experience",
     "org.hmti.role": "Education Staff",
@@ -194,26 +212,36 @@ const translations = {
     "cert.technical": "Technical",
     "contact.title": "Contact",
     "contact.title2": "Me",
-    "contact.sub": "Open to job opportunities, collaboration, or just a chat!",
+    "contact.sub": "For professional opportunities, collaboration, or discussions about information technology.",
     "contact.loc": "Location",
-    "contact.form.title": "Send a Message",
+    "contact.loc.value": "West Jakarta, Indonesia",
+    "edu.location": "South Jakarta",
+    "exp.location": "📍 South Jakarta",
+    "contact.form.title": "Send a Message via WhatsApp",
     "contact.form.name": "Name",
-    "contact.form.name.ph": "Your Name",
+    "contact.form.name.ph": "Your Name / Company",
     "contact.form.msg": "Message",
-    "contact.form.msg.ph": "Write your message here...",
-    "contact.form.send": "Send Message",
+    "contact.form.msg.ph": "Write your message or tell me why you're reaching out...",
+    "contact.form.send": "Send via WhatsApp",
     "contact.success.title": "WhatsApp Opened!",
-    "contact.success.desc": "WhatsApp is opening with your message pre-filled. Just hit Send! ✅",
+    "contact.success.desc": "WhatsApp opened with your message pre-filled. Just tap Send! ✅",
+    "contact.back.home": "Back to Home",
     "nav.home": "Home",
-    "about.sub": "Get to know more about my background, character, and interests",
+    "about.sub": "An overview of my educational background, experience, and the competencies I have developed",
     "skills.sub": "Technical skills, soft skills, and tools I specialize in",
     "exp.sub": "Work history, professional roles, and project contributions",
-    "edu.sub": "Formal educational background from vocational high school to university",
+    "edu.sub": "My educational background and the competencies I have developed",
     "org.sub": "Committee and student organization experiences",
     "cert.sub": "Skill certifications, competitions, and professional credentials",
-    "back.home": "← Back to Home",
+    "back.home": "Back to Home",
     "explore.title": "Explore Profile",
     "explore.sub": "Select a section below to explore detailed portfolio information",
+    "explore.about.link": "View Profile →",
+    "explore.skills.link": "View Skills →",
+    "explore.experience.link": "View Experience →",
+    "explore.education.link": "View Education →",
+    "explore.organization.link": "View Organizations →",
+    "explore.certifications.link": "View Certifications →",
   }
 };
 
@@ -349,6 +377,26 @@ if (cursor && cursorFollower && window.innerWidth > 768) {
 const navbar = document.getElementById("navbar");
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
+let navOverlay;
+
+function setMobileMenuOpen(isOpen) {
+  if (!hamburger || !navLinks) return;
+
+  hamburger.classList.toggle("open", isOpen);
+  hamburger.setAttribute("aria-expanded", String(isOpen));
+  navLinks.classList.toggle("open", isOpen);
+  document.body.classList.toggle("nav-open", isOpen);
+
+  if (isOpen && !navOverlay) {
+    navOverlay = document.createElement("div");
+    navOverlay.className = "nav-overlay";
+    navOverlay.addEventListener("click", () => setMobileMenuOpen(false));
+    navbar.after(navOverlay);
+  } else if (!isOpen && navOverlay) {
+    navOverlay.remove();
+    navOverlay = null;
+  }
+}
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
@@ -359,18 +407,27 @@ window.addEventListener("scroll", () => {
   updateActiveNav();
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768 && navLinks?.classList.contains("open")) {
+    setMobileMenuOpen(false);
+  }
+});
+
 if (hamburger) {
   hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("open");
-    navLinks.classList.toggle("open");
+    setMobileMenuOpen(!navLinks.classList.contains("open"));
   });
 }
 
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && navLinks?.classList.contains("open")) {
+    setMobileMenuOpen(false);
+    hamburger.focus();
+  }
+});
+
 document.querySelectorAll(".nav-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("open");
-    navLinks.classList.remove("open");
-  });
+  link.addEventListener("click", () => setMobileMenuOpen(false));
 });
 
 function updateActiveNav() {
@@ -508,30 +565,19 @@ function handleSubmit(e) {
   const success = document.getElementById("formSuccess");
 
   const name    = document.getElementById("name").value.trim();
-  const email   = document.getElementById("email").value.trim();
   const message = document.getElementById("message").value.trim();
 
-  // Build WhatsApp message
-  const waNumber = "6281382473906"; // 08138... → 6281382...
-  const waText = encodeURIComponent(
-    `Halo Imtiyazian! 👋\n\n` +
-    `Nama  : ${name}\n` +
-    `Email : ${email}\n\n` +
-    `Pesan :\n${message}`
-  );
-  const waURL = `https://wa.me/${waNumber}?text=${waText}`;
+  const waText = encodeURIComponent(`Halo, saya ${name}.\n\n${message}`);
+  const whatsappURL = `https://wa.me/6281382473906?text=${waText}`;
 
-  // Show loading briefly then redirect
   btn.disabled = true;
   text.textContent = currentLang === "en" ? "Opening WhatsApp..." : "Membuka WhatsApp...";
+  window.open(whatsappURL, "_blank", "noopener,noreferrer");
 
   setTimeout(() => {
     // Show success UI
     form.style.display = "none";
     success.style.display = "block";
-
-    // Open WhatsApp in new tab
-    window.open(waURL, "_blank");
 
     // Reset form after 4s
     setTimeout(() => {

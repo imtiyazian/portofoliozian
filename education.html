@@ -53,7 +53,7 @@
           <span class="lang-divider">|</span>
           <span class="lang-other" id="langOther">EN</span>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-controls="navLinks" aria-expanded="false" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -65,7 +65,10 @@
     <div class="container">
 
       <!-- Breadcrumb / Back -->
-      <a href="index.html" class="page-nav-back" data-i18n="back.home">← Kembali ke Beranda</a>
+      <a href="index.html" class="page-nav-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-7h6v7"/></svg>
+        <span data-i18n="back.home">Kembali ke Beranda</span>
+      </a>
 
       <!-- Page Hero Header -->
       <header class="page-hero" data-aos="fade-up">
@@ -77,7 +80,7 @@
           <span data-i18n="edu.title">Riwayat</span> <span class="gradient-text" data-i18n="edu.title2">Pendidikan</span>
         </h1>
         <p class="page-hero-sub" data-i18n="edu.sub">
-          Latar belakang pendidikan formal dari SMK hingga Universitas
+          Latar belakang pendidikan dan kompetensi yang saya kembangkan
         </p>
       </header>
 
@@ -91,7 +94,7 @@
             <div>
               <div class="edu-degree" data-i18n="edu.ubl.degree">S1 Teknik Informatika</div>
               <div class="edu-institution">Universitas Budi Luhur</div>
-              <div class="edu-location">Jakarta Selatan</div>
+              <div class="edu-location" data-i18n="edu.location">Jakarta Selatan</div>
             </div>
           </div>
           <div class="edu-footer">
@@ -99,7 +102,7 @@
             <span class="edu-year">2023 – <span data-i18n="edu.now">Sekarang</span></span>
           </div>
           <div class="edu-desc" data-i18n="edu.ubl.desc">
-            Mendalami ilmu komputer, pengembangan perangkat lunak, sistem informasi, dan infrastruktur jaringan.
+            Mempelajari pengembangan perangkat lunak, pemrograman, basis data, analisis sistem, dan pemecahan masalah berbasis teknologi. Selama perkuliahan, saya terus mengembangkan kemampuan berpikir logis, menganalisis kebutuhan sistem, serta menerapkan pengetahuan teknis melalui proyek akademik dan pengembangan aplikasi.
           </div>
         </div>
 
@@ -111,7 +114,7 @@
             <div>
               <div class="edu-degree" data-i18n="edu.smk.degree">Teknik Komputer dan Jaringan</div>
               <div class="edu-institution">SMKN 43 Jakarta</div>
-              <div class="edu-location">Jakarta Selatan</div>
+              <div class="edu-location" data-i18n="edu.location">Jakarta Selatan</div>
             </div>
           </div>
           <div class="edu-footer">
@@ -119,7 +122,7 @@
             <span class="edu-year">2019 – 2022</span>
           </div>
           <div class="edu-desc" data-i18n="edu.smk.desc">
-            Fondasi kuat di bidang Teknik Komputer dan Jaringan — konfigurasi hardware, software, dan infrastruktur jaringan.
+            Mempelajari dasar-dasar teknologi komputer dan jaringan, termasuk instalasi dan konfigurasi perangkat jaringan, administrasi sistem, serta troubleshooting perangkat keras dan perangkat lunak. Pendidikan ini menjadi dasar dalam memahami infrastruktur teknologi informasi dan pengelolaan jaringan komputer.
           </div>
         </div>
       </div>
@@ -147,7 +150,7 @@
           <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
         </div>
         <p class="footer-text">
-          Made with ❤️ by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
+          Made by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
         </p>
         <p class="footer-copy">© 2026 All rights reserved.</p>
       </div>

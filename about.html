@@ -53,7 +53,7 @@
           <span class="lang-divider">|</span>
           <span class="lang-other" id="langOther">EN</span>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -65,7 +65,10 @@
     <div class="container">
 
       <!-- Breadcrumb / Back -->
-      <a href="index.html" class="page-nav-back" data-i18n="back.home">← Kembali ke Beranda</a>
+      <a href="index.html" class="page-nav-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-7h6v7"/></svg>
+        <span data-i18n="back.home">Kembali ke Beranda</span>
+      </a>
 
       <!-- Page Hero Header -->
       <header class="page-hero" data-aos="fade-up">
@@ -77,69 +80,14 @@
           <span data-i18n="about.title">Tentang</span> <span class="gradient-text" data-i18n="about.title2">Saya</span>
         </h1>
         <p class="page-hero-sub" data-i18n="about.sub">
-          Mengenal lebih dekat latar belakang, karakter, dan minat saya
+          Sekilas tentang latar belakang pendidikan, pengalaman, dan kompetensi yang saya kembangkan
         </p>
       </header>
 
       <!-- About Grid Content -->
       <div class="about-grid">
-        <div class="about-text" data-aos="fade-right">
-          <p class="about-paragraph" data-i18n="about.p1">
-            Saya adalah <strong>mahasiswa tingkat akhir Teknik Informatika</strong> di Universitas Budi Luhur,
-            Jakarta. Dengan latar belakang pendidikan di bidang <strong>Teknik Komputer dan Jaringan</strong>,
-            saya memiliki fondasi yang kuat di dunia IT.
-          </p>
-          <p class="about-paragraph" data-i18n="about.p2">
-            Saya memiliki pengalaman profesional selama <strong>1+ tahun</strong> sebagai KYC Agent di
-            <strong>PT. GoTo Gojek Tokopedia</strong> dan pengalaman sebagai <strong>IT Consultant Intern</strong>
-            di PT. Tijari Teknologi Automasi. Saya sangat passionate dalam Web Development,
-            administrasi jaringan, dan pengembangan solusi IT.
-          </p>
-          <p class="about-paragraph" data-i18n="about.p3">
-            Sebagai pribadi, saya adalah seorang <strong>pemikir logis</strong>, pekerja tim yang baik, dan
-            mampu bekerja di bawah tekanan. Saya selalu berkomitmen untuk terus belajar dan berkembang
-            secara profesional.
-          </p>
-          <div class="about-info-grid">
-            <div class="info-item">
-              <span class="info-label">📍 <span data-i18n="about.loc.label">Lokasi</span></span>
-              <span class="info-value">Jakarta Barat</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">🎓 <span data-i18n="about.status.label">Status</span></span>
-              <span class="info-value" data-i18n="about.status.val">Mahasiswa Tingkat Akhir</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">📧 Email</span>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammadzyan30@gmail.com" target="_blank" rel="noopener noreferrer" class="info-value">mohammadzyan30@gmail.com</a>
-            </div>
-            <div class="info-item">
-              <span class="info-label">📱 Phone / WA</span>
-              <a href="https://wa.me/6281382473906" target="_blank" rel="noopener noreferrer" class="info-value">081382473906</a>
-            </div>
-            <div class="info-item" style="grid-column: 1 / -1;">
-              <span class="info-label">💼 LinkedIn</span>
-              <a href="https://www.linkedin.com/in/imtiyazian" target="_blank" rel="noopener noreferrer" class="info-value" style="display: inline-flex; align-items: center; gap: 0.45rem;">
-                <svg viewBox="0 0 24 24" fill="#0a66c2" width="16" height="16"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                <span>linkedin.com/in/imtiyazian</span>
-              </a>
-            </div>
-          </div>
-
-          <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="CV/CV-MOHAMMAD%20IMTIYAZIAN%20NU'MAN.pdf" target="_blank" class="btn btn-ghost" id="about-cv-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-              <span data-i18n="hero.cta.cv">Lihat CV</span>
-            </a>
-            <a href="skills.html" class="btn btn-primary">
-              <span data-i18n="nav.skills">Skills</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="about-traits" data-aos="fade-left">
-          <div class="about-profile-card glass-card" style="margin-bottom: 1.5rem; text-align: center; padding: 2rem;">
+        <div class="about-sidebar">
+          <div class="about-profile-card glass-card" data-aos="fade-left" style="text-align: center; padding: 2rem;">
             <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.25rem; border: 3px solid rgba(6,182,212,0.4); box-shadow: 0 0 25px rgba(6,182,212,0.25);">
               <img src="image/zian.jpeg" alt="Mohammad Imtiyazian Nu'man" style="width: 100%; height: 100%; object-fit: cover; object-position: center 48%; display: block;" />
             </div>
@@ -153,7 +101,7 @@
             </div>
           </div>
 
-          <div class="traits-card glass-card">
+          <div class="traits-card glass-card" data-aos="fade-left">
             <h3 class="traits-title" data-i18n="about.traits.title">Karakter</h3>
             <div class="trait-list">
               <div class="trait-item">
@@ -194,6 +142,57 @@
             </div>
           </div>
         </div>
+
+        <div class="about-text" data-aos="fade-right">
+          <p class="about-paragraph" data-i18n="about.p1">
+            Saya adalah <strong>mahasiswa tingkat akhir Teknik Informatika</strong> di Universitas Budi Luhur,
+            Jakarta. Dengan latar belakang pendidikan di bidang <strong>Teknik Komputer dan Jaringan</strong>,
+            saya memiliki fondasi yang kuat di dunia IT.
+          </p>
+          <p class="about-paragraph" data-i18n="about.p2">
+            Saya memiliki pengalaman profesional selama <strong>1+ tahun</strong> sebagai KYC Agent di
+            <strong>PT. GoTo Gojek Tokopedia</strong> dan pengalaman sebagai <strong>IT Consultant Intern</strong>
+            di PT. Tijari Teknologi Automasi. Saya sangat passionate dalam Web Development,
+            administrasi jaringan, dan pengembangan solusi IT.
+          </p>
+          <p class="about-paragraph" data-i18n="about.p3">
+            Sebagai pribadi, saya adalah seorang <strong>pemikir logis</strong>, pekerja tim yang baik, dan
+            mampu bekerja di bawah tekanan. Saya selalu berkomitmen untuk terus belajar dan berkembang
+            secara profesional.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">🎓 <span data-i18n="about.status.label">Status</span></span>
+              <span class="info-value" data-i18n="about.status.val">Mahasiswa Tingkat Akhir</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📧 Email</span>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammadzyan30@gmail.com" target="_blank" rel="noopener noreferrer" class="info-value">mohammadzyan30@gmail.com</a>
+            </div>
+            <div class="info-item" style="grid-column: 1 / -1;">
+              <span class="info-label">💼 LinkedIn</span>
+              <a href="https://www.linkedin.com/in/imtiyazian" target="_blank" rel="noopener noreferrer" class="info-value" style="display: inline-flex; align-items: center; gap: 0.45rem;">
+                <svg viewBox="0 0 24 24" fill="#0a66c2" width="16" height="16"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>linkedin.com/in/imtiyazian</span>
+              </a>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📍 <span data-i18n="about.loc.label">Lokasi</span></span>
+              <span class="info-value" data-i18n="about.loc.value">Jakarta Barat</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="CV/EN-CV%20MOHAMMAD%20IMTIYAZIAN%20NU%27MAN.pdf" target="_blank" class="btn btn-ghost" id="about-cv-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              <span data-i18n="hero.cta.cv">Lihat CV</span>
+            </a>
+            <a href="skills.html" class="btn btn-primary">
+              <span data-i18n="nav.skills">Skills</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -207,7 +206,7 @@
           <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
         </div>
         <p class="footer-text">
-          Made with ❤️ by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
+          Made by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
         </p>
         <p class="footer-copy">© 2026 All rights reserved.</p>
       </div>

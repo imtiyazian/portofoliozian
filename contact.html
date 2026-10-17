@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontak | Mohammad Imtiyazian Nu'man</title>
-  <meta name="description" content="Hubungi Mohammad Imtiyazian Nu'man - Email, WhatsApp, LinkedIn, dan formulir pesan." />
+  <meta name="description" content="Hubungi Mohammad Imtiyazian Nu'man melalui WhatsApp, email, atau LinkedIn." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -53,7 +53,7 @@
           <span class="lang-divider">|</span>
           <span class="lang-other" id="langOther">EN</span>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -63,9 +63,6 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main class="page-main">
     <div class="container">
-
-      <!-- Breadcrumb / Back -->
-      <a href="index.html" class="page-nav-back" data-i18n="back.home">← Kembali ke Beranda</a>
 
       <!-- Page Hero Header -->
       <header class="page-hero" data-aos="fade-up">
@@ -96,18 +93,6 @@
             <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
 
-          <!-- WhatsApp -->
-          <a href="https://wa.me/6281382473906" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-phone">
-            <div class="contact-icon" style="--c-color:#10b981">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">WhatsApp / Phone</div>
-              <div class="contact-value">+62 813-8247-3906</div>
-            </div>
-            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/imtiyazian" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-linkedin">
             <div class="contact-icon" style="--c-color:#0a66c2">
@@ -121,42 +106,39 @@
           </a>
 
           <!-- Location -->
-          <div class="contact-card glass-card" id="contact-location">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Jakarta+Barat%2C+Indonesia" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-location" aria-label="Lihat Jakarta Barat di Google Maps">
             <div class="contact-icon" style="--c-color:#8b5cf6">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
               <div class="contact-label" data-i18n="contact.loc">Lokasi</div>
-              <div class="contact-value">Jakarta Barat, Indonesia</div>
+              <div class="contact-value" data-i18n="contact.loc.value">Jakarta Barat, Indonesia</div>
             </div>
-          </div>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
         </div>
 
         <!-- Form -->
         <div class="contact-form-wrap glass-card" data-aos="fade-left">
-          <h3 class="form-title" data-i18n="contact.form.title">Kirim Pesan</h3>
+          <h3 class="form-title" data-i18n="contact.form.title">Kirim Pesan ke WhatsApp</h3>
           <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
             <div class="form-group">
               <label for="name" data-i18n="contact.form.name">Nama</label>
-              <input type="text" id="name" data-i18n-placeholder="contact.form.name.ph" placeholder="Nama Anda" required autocomplete="name"/>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="email@contoh.com" required autocomplete="email"/>
+              <input type="text" id="name" data-i18n-placeholder="contact.form.name.ph" placeholder="Nama Anda / Perusahaan" required autocomplete="name"/>
             </div>
             <div class="form-group">
               <label for="message" data-i18n="contact.form.msg">Pesan</label>
-              <textarea id="message" rows="4" data-i18n-placeholder="contact.form.msg.ph" placeholder="Tulis pesan Anda di sini..." required></textarea>
+              <textarea id="message" rows="4" data-i18n-placeholder="contact.form.msg.ph" placeholder="Tuliskan pesan atau tujuan Anda menghubungi saya..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
-              <span id="submitText" data-i18n="contact.form.send">Kirim Pesan</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              <span id="submitText" data-i18n="contact.form.send">Kirim ke WhatsApp</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L4 20l1.1-3.7A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M9 8.8c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.2.2-.2.4-.1.6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.6-.5c.2-.2.4-.2.6-.1l1.7.7c.3.1.4.3.4.5 0 .3-.1.8-.4 1.1-.4.4-1 .6-1.6.6-.7 0-1.7-.3-2.8-.9-1.2-.7-2.3-1.8-3-3-.6-1.1-.9-2.1-.9-2.8 0-.6.2-1.2.6-1.6.2-.2.4-.3.4-.3Z"/></svg>
             </button>
           </form>
           <div class="form-success" id="formSuccess" style="display:none">
             <div class="success-icon">✅</div>
             <h4 data-i18n="contact.success.title">WhatsApp Terbuka!</h4>
-            <p data-i18n="contact.success.desc">WhatsApp lo terbuka dengan pesan yang sudah terisi. Tinggal tekan Kirim! ✅</p>
+            <p data-i18n="contact.success.desc">WhatsApp terbuka dengan pesan yang sudah terisi. Tinggal tekan Kirim! ✅</p>
           </div>
         </div>
       </div>
@@ -168,7 +150,8 @@
           <span data-i18n="nav.certifications">Sertifikasi</span>
         </a>
         <a href="index.html" class="btn btn-ghost">
-          <span data-i18n="back.home">← Kembali ke Beranda</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-7h6v7"/></svg>
+          <span data-i18n="contact.back.home">Kembali ke Beranda</span>
         </a>
       </div>
 
@@ -183,7 +166,7 @@
           <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
         </div>
         <p class="footer-text">
-          Made with ❤️ by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
+          Made by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
         </p>
         <p class="footer-copy">© 2026 All rights reserved.</p>
       </div>

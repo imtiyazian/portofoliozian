@@ -53,7 +53,7 @@
           <span class="lang-divider">|</span>
           <span class="lang-other" id="langOther">EN</span>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -65,7 +65,10 @@
     <div class="container">
 
       <!-- Breadcrumb / Back -->
-      <a href="index.html" class="page-nav-back" data-i18n="back.home">← Kembali ke Beranda</a>
+      <a href="index.html" class="page-nav-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-7h6v7"/></svg>
+        <span data-i18n="back.home">Kembali ke Beranda</span>
+      </a>
 
       <!-- Page Hero Header -->
       <header class="page-hero" data-aos="fade-up">
@@ -209,7 +212,7 @@
           <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
         </div>
         <p class="footer-text">
-          Made with ❤️ by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
+          Made by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
         </p>
         <p class="footer-copy">© 2026 All rights reserved.</p>
       </div>

@@ -56,7 +56,7 @@
           <span class="lang-divider">|</span>
           <span class="lang-other" id="langOther">EN</span>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -97,14 +97,14 @@
         <p class="hero-desc" data-i18n="hero.desc">
           Mahasiswa Teknik Informatika tingkat akhir yang passionate di bidang
           <strong>Web Development</strong>, <strong>Jaringan Komputer</strong>, dan <strong>IT Solutions</strong>.
-          Based di Jakarta Barat 
+          Berlokasi di Jakarta Barat 🇮🇩
         </p>
         <div class="hero-actions">
           <a href="contact.html" class="btn btn-primary" id="hero-contact-btn">
             <span data-i18n="hero.cta.contact">Hubungi Saya</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z"/><path d="M22 2 11 13"/></svg>
           </a>
-          <a href="CV/CV-MOHAMMAD%20IMTIYAZIAN%20NU'MAN.pdf" target="_blank" class="btn btn-ghost" id="hero-cv-btn">
+          <a href="CV/EN-CV%20MOHAMMAD%20IMTIYAZIAN%20NU%27MAN.pdf" target="_blank" class="btn btn-ghost" id="hero-cv-btn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             <span data-i18n="hero.cta.cv">Lihat CV</span>
           </a>
@@ -149,9 +149,6 @@
         </div>
       </div>
     </div>
-    <div class="scroll-indicator">
-      <div class="scroll-dot"></div>
-    </div>
   </section>
 
   <!-- ========== EXPLORE PROFILE SECTIONS ========== -->
@@ -168,9 +165,9 @@
           <div>
             <div class="explore-icon">👤</div>
             <h3 class="explore-title" data-i18n="nav.about">Tentang Saya</h3>
-            <p class="explore-desc" data-i18n="about.sub">Mengenal lebih dekat latar belakang, karakter, dan minat saya.</p>
+            <p class="explore-desc" data-i18n="about.sub">Sekilas tentang latar belakang pendidikan, pengalaman, dan kompetensi yang saya kembangkan.</p>
           </div>
-          <span class="explore-link">Buka Profil →</span>
+          <span class="explore-link" data-i18n="explore.about.link">Buka Profil →</span>
         </a>
 
         <a href="skills.html" class="explore-card glass-card" data-aos="fade-up" data-aos-delay="50">
@@ -179,7 +176,7 @@
             <h3 class="explore-title" data-i18n="nav.skills">Keahlian (Skills)</h3>
             <p class="explore-desc" data-i18n="skills.sub">Keahlian teknis, soft skills, dan alat pendukung yang saya kuasai.</p>
           </div>
-          <span class="explore-link">Lihat Skills →</span>
+          <span class="explore-link" data-i18n="explore.skills.link">Lihat Skills →</span>
         </a>
 
         <a href="experience.html" class="explore-card glass-card" data-aos="fade-up" data-aos-delay="100">
@@ -188,16 +185,16 @@
             <h3 class="explore-title" data-i18n="nav.experience">Pengalaman Kerja</h3>
             <p class="explore-desc" data-i18n="exp.sub">Riwayat pekerjaan di GoTo Gojek Tokopedia dan PT. Tijari.</p>
           </div>
-          <span class="explore-link">Lihat Pengalaman →</span>
+          <span class="explore-link" data-i18n="explore.experience.link">Lihat Pengalaman →</span>
         </a>
 
         <a href="education.html" class="explore-card glass-card" data-aos="fade-up" data-aos-delay="150">
           <div>
             <div class="explore-icon">🎓</div>
             <h3 class="explore-title" data-i18n="nav.education">Riwayat Pendidikan</h3>
-            <p class="explore-desc" data-i18n="edu.sub">Latar belakang pendidikan dari SMK hingga Universitas Budi Luhur.</p>
+            <p class="explore-desc" data-i18n="edu.sub">Latar belakang pendidikan dan kompetensi yang saya kembangkan.</p>
           </div>
-          <span class="explore-link">Lihat Pendidikan →</span>
+          <span class="explore-link" data-i18n="explore.education.link">Lihat Pendidikan →</span>
         </a>
 
         <a href="organization.html" class="explore-card glass-card" data-aos="fade-up" data-aos-delay="200">
@@ -206,7 +203,7 @@
             <h3 class="explore-title" data-i18n="nav.organization">Organisasi</h3>
             <p class="explore-desc" data-i18n="org.sub">Pengalaman organisasi kemahasiswaan HMTI dan kepanitiaan PEMATIK.</p>
           </div>
-          <span class="explore-link">Lihat Organisasi →</span>
+          <span class="explore-link" data-i18n="explore.organization.link">Lihat Organisasi →</span>
         </a>
 
         <a href="certifications.html" class="explore-card glass-card" data-aos="fade-up" data-aos-delay="250">
@@ -215,10 +212,10 @@
             <h3 class="explore-title" data-i18n="nav.certifications">Sertifikasi & Prestasi</h3>
             <p class="explore-desc" data-i18n="cert.sub">Sertifikasi kompetensi BNSP, Business Plan Competition, dan algoritma.</p>
           </div>
-          <span class="explore-link">Lihat Sertifikasi →</span>
+          <span class="explore-link" data-i18n="explore.certifications.link">Lihat Sertifikasi →</span>
         </a>
 
-        <a href="contact.html" class="explore-card glass-card" data-aos="fade-up" data-aos-delay="300" style="grid-column: 1 / -1; background: linear-gradient(135deg, rgba(79,70,229,0.1), rgba(6,182,212,0.1));">
+        <a href="contact.html" class="explore-card explore-contact-card glass-card" data-aos="fade-up" data-aos-delay="300" style="background: linear-gradient(135deg, rgba(79,70,229,0.1), rgba(6,182,212,0.1));">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; width: 100%;">
             <div>
               <div class="explore-icon" style="margin-bottom: 0.5rem;">📬</div>
@@ -243,7 +240,7 @@
           <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
         </div>
         <p class="footer-text">
-          Made with ❤️ by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
+          Made by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
         </p>
         <p class="footer-copy">© 2026 All rights reserved.</p>
       </div>

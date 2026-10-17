@@ -53,7 +53,7 @@
           <span class="lang-divider">|</span>
           <span class="lang-other" id="langOther">EN</span>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -65,7 +65,10 @@
     <div class="container">
 
       <!-- Breadcrumb / Back -->
-      <a href="index.html" class="page-nav-back" data-i18n="back.home">← Kembali ke Beranda</a>
+      <a href="index.html" class="page-nav-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-7h6v7"/></svg>
+        <span data-i18n="back.home">Kembali ke Beranda</span>
+      </a>
 
       <!-- Page Hero Header -->
       <header class="page-hero" data-aos="fade-up">
@@ -135,12 +138,15 @@
               <div class="timeline-meta">
                 <span class="timeline-type internship" data-i18n="exp.intern">Internship</span>
                 <span class="timeline-date">Mar 2026 – Mei 2026</span>
-                <span class="timeline-loc">📍 Jakarta Selatan</span>
+                <span class="timeline-loc" data-i18n="exp.location">📍 Jakarta Selatan</span>
               </div>
             </div>
             <ul class="timeline-list">
-              <li data-i18n="tijari.1">Mengembangkan sistem berbasis digital, termasuk desain konsep dan pengembangan fitur</li>
-              <li data-i18n="tijari.2">Mengimplementasikan solusi IT untuk mendukung kebutuhan bisnis dan operasional perusahaan</li>
+              <li data-i18n="tijari.1">Contributed to the development and customization of an ERP platform using Odoo 18 and Python.</li>
+              <li data-i18n="tijari.2">Assisted in developing an e-learning system featuring course management, exams, participant progress tracking, and learning dashboards.</li>
+              <li data-i18n="tijari.3">Worked with PostgreSQL for database management and integration with Odoo modules.</li>
+              <li data-i18n="tijari.4">Supported business process analysis and workflow design to align system functionality with operational requirements.</li>
+              <li data-i18n="tijari.5">Utilized Git and GitHub for version control and project collaboration.</li>
             </ul>
             <div class="timeline-tags">
               <span class="tl-tag">IT Consulting</span>
@@ -174,7 +180,7 @@
           <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
         </div>
         <p class="footer-text">
-          Made with ❤️ by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
+          Made by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia
         </p>
         <p class="footer-copy">© 2026 All rights reserved.</p>
       </div>
