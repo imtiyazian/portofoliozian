@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Proyek | Mohammad Imtiyazian Nu'man</title>
+  <meta name="description" content="Pilihan proyek website yang dibuat oleh Mohammad Imtiyazian Nu'man." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-bracket">&lt;</span>
+        <span class="loader-name">YN</span>
+        <span class="loader-bracket">/&gt;</span>
+      </div>
+      <div class="loader-bar-wrapper">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-text" data-i18n="loading">Memuat portofolio...</p>
+    </div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">Tentang</a></li>
+        <li><a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="experience.html" class="nav-link" data-i18n="nav.experience">Pengalaman</a></li>
+        <li><a href="projects.html" class="nav-link active-nav" data-i18n="nav.projects">Proyek</a></li>
+        <li><a href="education.html" class="nav-link" data-i18n="nav.education">Pendidikan</a></li>
+        <li><a href="organization.html" class="nav-link" data-i18n="nav.organization">Organisasi</a></li>
+        <li><a href="certifications.html" class="nav-link" data-i18n="nav.certifications">Sertifikasi</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html" class="nav-home" aria-label="Beranda / Home" title="Beranda / Home">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-7h6v7"/></svg>
+          <span data-i18n="nav.home">Beranda</span>
+        </a>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+          <span class="lang-label" id="langLabel">ID</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-other" id="langOther">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <div class="container">
+      <header class="page-hero" data-aos="fade-up">
+        <div class="page-hero-badge">
+          <span class="badge-dot"></span>
+          <span>// 04. projects</span>
+        </div>
+        <h1 class="page-hero-title">
+          <span data-i18n="projects.title">Portofolio</span>
+          <span class="gradient-text" data-i18n="projects.title2">Proyek</span>
+        </h1>
+        <p class="page-hero-sub" data-i18n="projects.sub">Beberapa website dan karya yang saya buat</p>
+      </header>
+
+      <div class="project-grid">
+        <article class="project-card glass-card" data-aos="fade-up">
+          <img class="project-image" src="PROJECT/TRAVEL%20UMROH/DESAIN.jfif" alt="Tampilan desain website Marzuki Travel" />
+          <div class="project-content">
+            <div class="project-status">
+              <span class="badge-dot"></span>
+              <span data-i18n="projects.live">Website Live</span>
+            </div>
+            <h2 class="project-title">Marzuki Travel</h2>
+            <p class="project-description" data-i18n="projects.travel.description">
+              Website biro travel umroh yang menyajikan informasi layanan perjalanan dan membantu calon jamaah berkonsultasi dengan mudah.
+            </p>
+            <div class="project-tags" aria-label="Jenis proyek">
+              <span class="project-tag">Website</span>
+              <span class="project-tag">Travel Umroh</span>
+              <span class="project-tag">Responsive Design</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://marzuki-biro-travel.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="projects.visit">Kunjungi Website</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>YN<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">Made by Mohammad Imtiyazian Nu'man · Jakarta, Indonesia</p>
+        <p class="footer-copy">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

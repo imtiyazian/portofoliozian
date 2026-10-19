@@ -17,6 +17,7 @@ const translations = {
     "nav.education": "Pendidikan",
     "nav.organization": "Organisasi",
     "nav.certifications": "Sertifikasi",
+    "nav.projects": "Proyek",
     "nav.contact": "Kontak",
     "hero.badge": "Tersedia untuk Peluang Kerja",
     "hero.greeting": "Halo, Saya",
@@ -123,6 +124,13 @@ const translations = {
     "explore.education.link": "Lihat Pendidikan →",
     "explore.organization.link": "Lihat Organisasi →",
     "explore.certifications.link": "Lihat Sertifikasi →",
+    "explore.projects.link": "Lihat Proyek →",
+    "projects.title": "Portofolio",
+    "projects.title2": "Proyek",
+    "projects.sub": "Beberapa website dan karya yang saya buat",
+    "projects.travel.description": "Website biro travel umroh yang menyajikan informasi layanan perjalanan dan membantu calon jamaah berkonsultasi dengan mudah.",
+    "projects.visit": "Kunjungi Website",
+    "projects.live": "Website Live",
   },
   en: {
     "loading": "Loading portfolio...",
@@ -132,6 +140,7 @@ const translations = {
     "nav.education": "Education",
     "nav.organization": "Organizations",
     "nav.certifications": "Certifications",
+    "nav.projects": "Projects",
     "nav.contact": "Contact",
     "hero.badge": "Available for Opportunities",
     "hero.greeting": "Hi, I'm",
@@ -238,6 +247,13 @@ const translations = {
     "explore.education.link": "View Education →",
     "explore.organization.link": "View Organizations →",
     "explore.certifications.link": "View Certifications →",
+    "explore.projects.link": "View Projects →",
+    "projects.title": "Project",
+    "projects.title2": "Portfolio",
+    "projects.sub": "A selection of websites and work I have created",
+    "projects.travel.description": "An Umrah travel agency website presenting travel services and making it easy for prospective pilgrims to get in touch.",
+    "projects.visit": "Visit Website",
+    "projects.live": "Live Website",
   }
 };
 
