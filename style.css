@@ -1438,6 +1438,10 @@ a.info-value:hover {
   display: block;
 }
 
+.logo-smk img {
+  transform: translateY(-10px);
+}
+
 .edu-degree {
   font-size: 1rem;
   font-weight: 700;
