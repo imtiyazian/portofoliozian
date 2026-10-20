@@ -1468,6 +1468,8 @@ a.info-value:hover {
 }
 
 .edu-badge {
+  display: inline-flex;
+  align-items: center;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.25rem 0.75rem;
@@ -1486,6 +1488,16 @@ a.info-value:hover {
   border: 1px solid rgba(6,182,212,0.25);
 }
 
+.edu-badge-icon {
+  display: block;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  max-width: none;
+  object-fit: contain;
+}
+
 .edu-year {
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -1496,6 +1508,15 @@ a.info-value:hover {
   font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.65;
+}
+
+.cv-button-icon {
+  display: block;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  max-width: none;
+  object-fit: contain;
 }
 
 /* ==========================================

@@ -6,6 +6,61 @@
 "use strict";
 
 // ==========================================
+// VERCEL ANALYTICS
+// ==========================================
+window.va = window.va || function () {
+  (window.vaq = window.vaq || []).push(arguments);
+};
+
+if (window.location.protocol !== "file:" &&
+    window.location.hostname !== "localhost" &&
+    window.location.hostname !== "127.0.0.1") {
+  const analyticsScript = document.createElement("script");
+  analyticsScript.defer = true;
+  analyticsScript.src = "/_vercel/insights/script.js";
+  document.head.appendChild(analyticsScript);
+}
+
+function trackAnalyticsEvent(name, data = {}) {
+  window.va("event", { name, data });
+}
+
+document.addEventListener("click", (event) => {
+  if (!(event.target instanceof Element)) return;
+
+  const link = event.target.closest("a");
+  if (!link) return;
+
+  const page = window.location.pathname.split("/").pop().replace(/\.html$/, "") || "home";
+  const destination = new URL(link.href, window.location.href);
+  const destinationPage = destination.pathname.split("/").pop().replace(/\.html$/, "");
+
+  if (link.closest(".nav-links") && link.classList.contains("nav-link")) {
+    trackAnalyticsEvent("navigation_click", { destination: destinationPage });
+  }
+
+  if (destinationPage === "contact") {
+    trackAnalyticsEvent("contact_click", {
+      location: link.classList.contains("nav-cta") ? "navigation" : page,
+    });
+  }
+
+  if (/\/CV\/.+\.pdf$/i.test(destination.pathname)) {
+    trackAnalyticsEvent("cv_download", { location: page });
+  }
+
+  if (link.closest(".project-actions")) {
+    const projectTitle = link.closest(".project-card")?.querySelector(".project-title")?.textContent;
+    const project = projectTitle?.trim().toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
+    trackAnalyticsEvent("project_visit", { project: project || "unknown" });
+  }
+
+  if (link.id === "contact-email" || link.id === "contact-linkedin") {
+    trackAnalyticsEvent("contact_method_click", { method: link.id.replace("contact-", "") });
+  }
+});
+
+// ==========================================
 // TRANSLATIONS
 // ==========================================
 const translations = {
@@ -76,7 +131,7 @@ const translations = {
     "edu.now": "Sekarang",
     "edu.ubl.desc": "Mempelajari pengembangan perangkat lunak, pemrograman, basis data, analisis sistem, dan pemecahan masalah berbasis teknologi. Selama perkuliahan, saya terus mengembangkan kemampuan berpikir logis, menganalisis kebutuhan sistem, serta menerapkan pengetahuan teknis melalui proyek akademik dan pengembangan aplikasi.",
     "edu.smk.degree": "Teknik Komputer dan Jaringan",
-    "edu.grad": "✅ Lulus",
+    "edu.grad": "Lulus",
     "edu.smk.desc": "Mempelajari dasar-dasar teknologi komputer dan jaringan, termasuk instalasi dan konfigurasi perangkat jaringan, administrasi sistem, serta troubleshooting perangkat keras dan perangkat lunak. Pendidikan ini menjadi dasar dalam memahami infrastruktur teknologi informasi dan pengelolaan jaringan komputer.",
     "org.title": "Pengalaman",
     "org.title2": "Organisasi",
@@ -199,7 +254,7 @@ const translations = {
     "edu.now": "Present",
     "edu.ubl.desc": "Studying software development, programming, databases, systems analysis, and technology-based problem solving. Throughout my studies, I have continued to develop logical thinking, analyze system requirements, and apply technical knowledge through academic projects and application development.",
     "edu.smk.degree": "Computer and Network Engineering",
-    "edu.grad": "✅ Graduated",
+    "edu.grad": "Graduated",
     "edu.smk.desc": "Studied the fundamentals of computer and network technology, including installing and configuring network devices, system administration, and hardware and software troubleshooting. This education provided a foundation for understanding information technology infrastructure and computer network management.",
     "org.title": "Organization",
     "org.title2": "Experience",
@@ -316,6 +371,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (toggle) {
     toggle.addEventListener("click", () => {
       const next = currentLang === "id" ? "en" : "id";
+      trackAnalyticsEvent("language_toggle", { from: currentLang, to: next });
       // Flip animation
       toggle.style.transform = "scale(0.92)";
       setTimeout(() => { toggle.style.transform = ""; }, 150);
@@ -585,6 +641,7 @@ function handleSubmit(e) {
   btn.disabled = true;
   text.textContent = currentLang === "en" ? "Opening WhatsApp..." : "Membuka WhatsApp...";
   window.open(whatsappURL, "_blank", "noopener,noreferrer");
+  trackAnalyticsEvent("contact_form_submit");
 
   setTimeout(() => {
     // Show success UI
